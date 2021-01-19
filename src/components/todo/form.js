@@ -25,7 +25,7 @@ function TodoForm(props) {
           <Form.Label>To Do Item</Form.Label>
           <Form.Control
             name="text"
-            placeholder="Item Details"
+            placeholder="Item Details" data-testid="todoItem"
             onChange={handleInputChange}
           />
         </Form.Group>
@@ -34,7 +34,7 @@ function TodoForm(props) {
           <Form.Control
             type="text"
             name="assignee"
-            placeholder="Assignee Name"
+            placeholder="Assignee Name" data-testid="assignee"
             onChange={handleInputChange}
           />
         </Form.Group>
@@ -51,7 +51,7 @@ function TodoForm(props) {
         </Form.Group>
 
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" data-testid="submit">
           Submit
         </Button>
       </Form>

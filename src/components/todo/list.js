@@ -9,8 +9,9 @@ function TodoList(props) {
     <>
       <ListGroup >
         {props.list.map(item => (
-          <ListGroup.Item class="list-groups"
+          <ListGroup.Item className="list-groups"
             action variant={item.complete ? 'success' : 'danger'}
+            data-testid="listItem"
             className={`complete-${item.complete.toString()}`}
             key={item._id}
           >
